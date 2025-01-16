@@ -34,3 +34,7 @@ Observation:
     └── values.yaml
 ```
 
+**Chart.yaml*** file will have the details of helm charts like name, description etc. 
+**charts/** directory will have dependencies mentioned in our Chart.yaml. Dependencies example - let's say we are building an app and we need mysql db, so that will become dependency. 
+
+**_helpers.tpl** : this file is used to create reusable parts in our charts. note: any file inside templates/ directry which starts with underscore _ won't create a K8s object.
